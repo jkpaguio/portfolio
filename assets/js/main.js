@@ -1,10 +1,4 @@
-/**
-* Template Name: MyResume
-* Updated: Nov 17 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -268,3 +262,14 @@
   new PureCounter();
 
 })()
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+
+    // Find the div element by its id
+    var currentYearDisplay = document.getElementById("currentYear");
+
+    // Update the content of the div with the current year
+    currentYearDisplay.textContent = currentYear;
+});
